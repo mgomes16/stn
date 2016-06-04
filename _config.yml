@@ -1,3 +1,6 @@
 baseurl: /stn
-exclude: ['README.md']
+exclude: ['README.md', 'Gemfile']
 
+# Set the Sass partials directory, as we're using @imports
+sass:
+  sass_dir: _scss

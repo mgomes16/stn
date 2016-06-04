@@ -1,0 +1,27 @@
+
+
+
+html {
+	border: 15px #7E94BF solid	;
+	height: calc(100vh - 30px);
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 15px;
+}
+
+.current {
+	color: red;
+}
+
+.nav-top li a {
+	text-transform: uppercase;
+}
+
+.nav-bottom {
+	background: #7E2553;
+
+}
+

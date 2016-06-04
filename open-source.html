@@ -1,5 +1,14 @@
 ---
-layout: default
+layout: open-source
 ---
 
 <h3>Open source</h3>
+
+<ul>
+	{% for post in site.categories.news limit:1 %}
+	<li>
+		<a href="">{{post.title}}</a>
+		<small>{{post.meta}}</small>
+	</li>
+	{% endfor %}
+</ul>
