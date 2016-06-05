@@ -1,0 +1,34 @@
+- title: Oblat
+  category: work
+  tags: 'webapp / ember / sass'
+  content: 'Observatorio electoral para los paises de latinoamerica'
+  link: 'http://oblat.am/#/'
+  image: 'oblat.png'
+
+- title: Somosfuturo
+  category: work
+  tags: 'e-book / ember / wordpress / sass'
+  content: 'Version digital del libro impreso Somos Futuro'
+  link: 'http://somosfuturo.com.ar/#/sub-term/153'
+  image: 'somosfuturo.png'
+
+- title: Ember-Kt-editor
+  category: work
+  tags: 'app / ux / ember / sass'
+  content: 'App para crear los informes de Oblat'
+  link: 'http://oblat.am/#/'
+  image: 'oblat.png'
+
+- title: DG.Fadu.uba.ar
+  category: work
+  tags: 'Web / wordpress'
+  content: 'Adaptacion de un wordpress para el sitio de la carrera de Diseño Grafico de la UBA'
+  link: 'http://dg.fadu.uba.ar/'
+  image: 'dgfaduuba.png'
+
+- title: De Zurda
+  category: work
+  tags: 'Web / wordpress / mobile'
+  content: 'Adaptacion de un wordpress para el programa De Zurda'
+  link: 'http://dezurda.com/'
+  image: 'dezurda.png'

@@ -2,4 +2,30 @@
 layout: default
 ---
 
-<h3>Trabajos</h3>
+<div class="works">
+  <h3 class="ui dividing header">
+  Proyectos</h3>
+<div class="ui link cards">
+	{% for post in site.data.works %}
+  <div class="card">
+    <div class="image">
+      <img src="{{ site.baseurl }}/img/{{post.image}}">
+    </div>
+    <div class="content">
+      <div class="header">{{post.title}}</div>
+      <div class="meta">
+        <div>{{post.tags}}</div>
+      </div>
+      <div class="description">
+        {{post.content}}
+      </div>
+    </div>
+    <div class="extra content">
+      <a class="ui button" href="{{post.link}}" target="_blank">Ver sitio</a>
+    </div>
+  </div>
+   {% endfor %}
+  
+</div>
+</div>
+

@@ -2,54 +2,31 @@
 layout: open-source
 ---
 
-<h3>Open source</h3>
-
-<ul>
-	{% for post in site.categories.news %}
-	<li>
-		<a href="">{{post.title}}</a>
-		<small>{{post.meta}}</small>
-	</li>
-	{% endfor %}
-</ul>
-
-<ul>
-  {% for post in site.data.open-source %}
-  <li>
-    <a href="">{{post.title}}</a>
-    <small>{{post.content}}</small>
-  </li>
-  {% endfor %}
-</ul>
+  <h3 class="ui dividing header">
+  Software Libre</h3>
 
 <div class="controls">
-  <label>Filter:</label>
-  
-  <button class="filter" data-filter="all">All</button>
-  <button class="filter" data-filter=".category-1">Category 1</button>
-  <button class="filter" data-filter=".category-2">Category 2</button>
+  <button class="filter" data-filter="all">Ver todos</button>
+  <button class="filter" data-filter=".color">Color</button>
+  <button class="filter" data-filter=".flexbox">Flexbox</button>
+  <button class="filter" data-filter=".jekyll">Jekyll</button>
   
   <label>Sort:</label>
   
-  <button class="sort" data-sort="myorder:asc">Asc</button>
-  <button class="sort" data-sort="myorder:desc">Desc</button>
-</div>
-<div id="Container" class="container">
-  <div class="mix category-1" data-myorder="1"></div>
-  <div class="mix category-1" data-myorder="2"></div>
-  <div class="mix category-1" data-myorder="3"></div>
-  <div class="mix category-2" data-myorder="4"></div>
-  <div class="mix category-1" data-myorder="5"></div>
-  <div class="mix category-1" data-myorder="6"></div>
-  <div class="mix category-2" data-myorder="7"></div>
-  <div class="mix category-2" data-myorder="8"></div>
-  
-  <div class="gap"></div>
-  <div class="gap"></div>
+  <button class="sort" data-sort="myorder:asc">Nuevos</button>
+  <button class="sort" data-sort="myorder:desc">Viejos</button>
 </div>
 
- <script>
+<div id="Container" class="container">
+  {% for post in site.data.open-source %}
+  <div class="mix {{post.category}}" data-myorder="{{post.order}}">
+    <a href="{{post.link}}" target="_blank">{{post.title}}</a>
+  </div>
+  {% endfor %}
+</div>
+
+  <script>
     $(function(){
-  $('#Container').mixItUp();
-});
-    </script>
+    $('#Container').mixItUp();
+    });
+  </script>

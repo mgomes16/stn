@@ -1,3 +1,19 @@
-- title: Ted
-  folder: jekyll-up
-  content: 'lo que te plazca'
+- title: Color Hunt
+  category: color
+  link: 'http://www.colorhunt.co/popular'
+  order: 1
+
+- title: Color Codes
+  category: color
+  link: 'http://htmlcolorcodes.com/'
+  order: 2
+
+- title: What the flexbox
+  category: flexbox
+  link: 'http://flexbox.io/'
+  order: 3
+
+- title: Jekyll on Github
+  category: jekyll
+  link: 'https://www.youtube.com/watch?v=qoQzIjGbfTg&index=3&list=PLWjCJDeWfDdfVEcLGAfdJn_HXyM4Y7_k-'
+  order: 4
