@@ -1,13 +1,9 @@
-<nav>
-	<ul class="nav {{include.navclass}}">
-		<li>
-			<a href="{{site.baseurl}}/index.html" class="{% if page.url == '/index.html' %}current{% endif %}">Home</a>
-		</li>
-		<li>
-			<a href="{{site.baseurl}}/works.html" class="{% if page.url == '/works.html' %}current{% endif %}">Trabajos</a>
-		</li>
-		<li>
-			<a href="{{site.baseurl}}/open-source.html" class="{% if page.url == '/open-source.html' %}current{% endif %}">Open source</a>
-		</li>
-	</ul>
+<nav class="ui secondary large hidden menu">
+	<img src="{{ site.baseurl }}/img/trinomia.svg" alt="" class="item" width="135">
+	<div class="ui container nav">
+	<a href="{{site.baseurl}}/index.html" class="item {% if page.url == '/index.html' %}active{% endif %}">
+	Home</a>
+	<a href="{{site.baseurl}}/works.html" class="item {% if page.url == '/works.html' %}active{% endif %}">		Trabajos</a>
+	<a href="{{site.baseurl}}/open-source.html" class="item {% if page.url == '/open-source.html' %}active{% endif %}">
+	Open source</a>
 </nav>
