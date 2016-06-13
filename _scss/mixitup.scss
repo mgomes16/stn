@@ -1,7 +1,11 @@
 .controls{
-  padding: 2%;
+  padding: 0;
   background: #333;
   color: #eee;
+  flex-basis: 290px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 label{
@@ -33,70 +37,96 @@ button + label{
   margin-left: 1em;
 }
 
-.containermix {
+.mxt-container {
   padding: 2% 2% 0;
   text-align: justify;
-  font-size: 0.1px;
+  //font-size: 0.1px;
+  flex: 1;
+
+  -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
 }
 
-.container:after{
+.mxt-container:after{
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-.container .mix,
-.container .gap{
+.mxt-container .mix,
+.mxt-container .gap{
   display: inline-block;
   width: 49%;
+  overflow: hidden;
 }
 
-.container .mix{
+.mxt-container .mix{
   text-align: left;
-  background: #03899c;
-  margin-bottom: 2%;
+  background: #b6d5e1;
+  margin-bottom: 1%;
   display: none;
-
-  a {
-    color: #fff;
-  }
+  position: relative;
+  color: #65799b;
+  padding: 1%;
 }
 
-.container .mix.category-1{
+.mxt-container .mix.category-1{
   border-top: 2px solid limegreen;
 }
 
-.container .mix.category-2{
+.mxt-container .mix.category-2{
   border-top: 2px solid yellow;
 }
 
-.container .mix:after{
-  content: attr(data-myorder);
-  color: white;
-  font-size: 16px;
-  display: inline-block;
-  vertical-align: top;
-  padding: 4% 6%;
-  font-weight: 700;
+.mxt-container .mix:after{
+content: attr(data-myorder);
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+    font-weight: 700;
+    position: absolute;
+    top: -4px;
+    right: -4px;
 }
 
-.container .mix:before{
-  content: '';
-  display: inline-block;
-  padding-top: 60%;
+.mxt-container .mix:before{
+  //content: '';
+  //display: inline-block;
+  //padding-top: 60%;
 }
 
 @media all and (min-width: 420px){
-  .container .mix,
-  .container .gap{
+  .mxt-container .mix,
+  .mxt-container .gap{
     width: 32%;
   }
 }
 
 @media all and (min-width: 640px){
-  .container .mix,
-  .container .gap{
+  .mxt-container .mix,
+  .mxt-container .gap{
     width: 23.5%;
+  }
+}
+
+/**
+ * List Styles
+ */
+
+.mxt-container.list .mix{
+  width: 100%;
+}
+
+.mxt-container.list .mix:before{
+  //padding-top: 40px;
+}
+
+.ui.cards.grid {
+  flex-direction: column;
+
+  .mix {
+    width: 100%;
   }
 }

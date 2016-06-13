@@ -17,3 +17,28 @@
   category: jekyll
   link: 'https://www.youtube.com/watch?v=qoQzIjGbfTg&index=3&list=PLWjCJDeWfDdfVEcLGAfdJn_HXyM4Y7_k-'
   order: 4
+
+- title: Medium
+  category: tools
+  link: 'https://medium.com/'
+  order: 5
+
+- title: Cody House
+  category: tutorial
+  link: 'https://codyhouse.co/'
+  order: 6
+
+- title: Codrops
+  category: tutorial
+  link: 'http://tympanus.net/codrops/'
+  order: 7
+
+- title: Atomic Design
+  category: tutorial
+  link: 'http://atomicdesign.bradfrost.com/table-of-contents/'
+  order: 8
+
+- title: Semantic UI
+  category: framework
+  link: 'http://semantic-ui.com'
+  order: 9

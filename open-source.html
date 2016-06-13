@@ -2,31 +2,140 @@
 layout: open-source
 ---
 
-  <h3 class="ui dividing header">
-  Software Libre</h3>
+
+
 
 <div class="controls">
-  <button class="filter" data-filter="all">Ver todos</button>
-  <button class="filter" data-filter=".color">Color</button>
-  <button class="filter" data-filter=".flexbox">Flexbox</button>
-  <button class="filter" data-filter=".jekyll">Jekyll</button>
   
-  <label>Sort:</label>
+
+
+<div class="ui horizontal list">
   
-  <button class="sort" data-sort="myorder:asc">Nuevos</button>
-  <button class="sort" data-sort="myorder:desc">Viejos</button>
+  <h5>Filtrar por tipo</h5>
+  <div class="item">
+  <button class="ui label filter" data-filter="all">Ver todos</button>
+  </div>
+  <div class="item">
+    <button class="ui label filter" data-filter=".color">Color</button>
+  </div>
+  <div class="item">
+  <button class="ui label filter" data-filter=".flexbox">Flexbox</button>
+  </div>
+  <div class="item">
+   <button class="ui label filter" data-filter=".jekyll">Jekyll</button>
+  </div>
+  <div class="item">
+   <button class="ui label filter" data-filter=".tools">Tools</button>
+  </div>
+    <div class="item">
+   <button class="ui label filter" data-filter=".tutorial">Tutorials</button>
+  </div>
+    <div class="item">
+   <button class="ui label filter" data-filter=".framework">Frameworks</button>
+  </div>
+  <h5>Ordenar</h5>
+  <div class="item">
+    <button class="ui label sort" data-sort="myorder:asc">Nuevos</button>
+  </div>
+  <div class="item">
+    <button class="ui label sort" data-sort="myorder:desc">Viejos</button>
+  </div>
+
 </div>
 
-<div id="Container" class="container">
+
+</div>
+
+
+
+<div id="Container" class="mxt-container">
+  <h3 class="ui dividing header -flex">
+    Software Libre
+    <button id="ChangeLayout" class="ui label ">
+      Cuadricula
+    </button>
+  </h3>
   {% for post in site.data.open-source %}
   <div class="mix {{post.category}}" data-myorder="{{post.order}}">
-    <a href="{{post.link}}" target="_blank">{{post.title}}</a>
+    <div class="title">
+      <h3>
+        <a href="{{post.link}}" target="_blank">
+          
+        {{post.title}}</a>
+
+        </h3>
+    </div>
+    <div class="description">
+      <p>Buu!</p>
+    </div>
+    <div class="ui labels">
+       
+       <button class="ui label filter" data-filter="all">Ver todos</button>
+       <button class="ui label filter" data-filter=".{{post.category}}">{{post.category}}</button>
+    </div>
   </div>
   {% endfor %}
+  <div class="gap"></div>
+  <div class="gap"></div>
 </div>
 
   <script>
-    $(function(){
-    $('#Container').mixItUp();
-    });
+ // We will be using MixItUp's 'changeLayout' API method to add and remove a 'list' class to the container. This class changes the styling of our target elements (see CSS).
+  
+ // NB: Changing layout doesn't have to be between grid/list only, we can add any class we want and use it to affect the styling of our elements.
+
+$(function(){
+
+  var layout = 'list', // Store the current layout as a variable
+      $container = $('#Container'), // Cache the MixItUp container
+      $changeLayout = $('#ChangeLayout'); // Cache the changeLayout button
+  
+  // Instantiate MixItUp with some custom options:
+  
+  $container.mixItUp({
+    animation: {
+      animateChangeLayout: true, // Animate the positions of targets as the layout changes
+      animateResizeTargets: true, // Animate the width/height of targets as the layout changes
+      effects: 'fade rotateX(-40deg) translateZ(-100px)'
+    },
+    layout: {
+      containerClass: 'list' // Add the class 'list' to the container on load
+    }
+  });
+  
+  // MixItUp does not provide a default "change layout" button, so we need to make our own and bind it with a click handler:
+  
+  $changeLayout.on('click', function(){
+    
+    // If the current layout is a list, change to grid:
+    
+    if(layout == 'list'){
+      layout = 'grid';
+      
+      $changeLayout.text('Lista'); // Update the button text
+      
+      $container.mixItUp('changeLayout', {
+        containerClass: layout // change the container class to "grid"
+      });
+      
+    // Else if the current layout is a grid, change to list:  
+    
+    } else {
+      layout = 'list';
+      
+      $changeLayout.text('Cuadricula'); // Update the button text
+      
+      $container.mixItUp('changeLayout', {
+        containerClass: layout // Change the container class to 'list'
+      });
+    }
+  });
+  
+});
+
+$('.ui.accordion')
+  .accordion()
+;
+
   </script>
+

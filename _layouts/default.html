@@ -3,15 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>STN</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
 	<link rel="stylesheet" href="{{site.baseurl}}/normalize.css">
 	<link rel="stylesheet" href="{{site.baseurl}}/style.css">
 	 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	 <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.mixitup.js"></script>
 
 </head>
-<body>
-	<header>
 
+{% include accordion.html %}
+
+<body class="{% if page.url == '/open-source.html' %}op-source{% endif %}">
+	<header>
 		{% include nav.html %}
 	</header>
 
@@ -61,6 +64,8 @@
   })
 ;
 </script>
+
+
 
 </body>
 </html>
