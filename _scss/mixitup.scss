@@ -38,14 +38,35 @@ button + label{
 }
 
 .mxt-container {
-  padding: 2% 2% 0;
-  text-align: justify;
-  //font-size: 0.1px;
-  flex: 1;
+    padding: 2% 2% 0;
+    text-align: justify;
+    flex: 1;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
 
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
+    &.list {
+      flex-direction: column;
+
+      .mix {
+        flex: 1;
+        flex-firection: row;
+      }
+    }
+
+  //padding: 2% 2% 0;
+  //text-align: justify;
+  //font-size: 0.1px;
+  //flex: 1;
+  //-webkit-transform: translateZ(0);
+  //-webkit-backface-visibility: hidden;
+
 }
+
+
 
 .mxt-container:after{
   content: '';
@@ -63,32 +84,50 @@ button + label{
 .mxt-container .mix{
   text-align: left;
   background: #b6d5e1;
-  margin-bottom: 1%;
+  margin: 1%;
   display: none;
   position: relative;
   color: #65799b;
-  padding: 1%;
+  padding: 3%;
+  flex: 0 0 30%;
+  //text-align: left;
+  //background: #b6d5e1;
+  //margin-bottom: 1%;
+  //display: none;
+  //position: relative;
+  //color: #65799b;
+  //padding: 1%;
+
+  .extra {
+    margin-top: 10px;
+
+    img {
+      width: 20px;
+      margin: 0 5px 0 0;
+    }
+  }
 }
 
-.mxt-container .mix.category-1{
+.mxt-container .mix.lrg {
   border-top: 2px solid limegreen;
+  width: 100%;
 }
 
-.mxt-container .mix.category-2{
+.mxt-container .mix.sm {
   border-top: 2px solid yellow;
 }
 
 .mxt-container .mix:after{
-content: attr(data-myorder);
-    color: white;
-    font-size: 16px;
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px 15px;
-    font-weight: 700;
-    position: absolute;
-    top: -4px;
-    right: -4px;
+  content: attr(data-myorder);
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 15px;
+  font-weight: 700;
+  position: absolute;
+  top: -4px;
+  right: -4px;
 }
 
 .mxt-container .mix:before{
@@ -96,7 +135,7 @@ content: attr(data-myorder);
   //display: inline-block;
   //padding-top: 60%;
 }
-
+/*
 @media all and (min-width: 420px){
   .mxt-container .mix,
   .mxt-container .gap{
@@ -110,7 +149,7 @@ content: attr(data-myorder);
     width: 23.5%;
   }
 }
-
+*/
 /**
  * List Styles
  */

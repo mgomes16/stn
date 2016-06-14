@@ -6,14 +6,10 @@ layout: open-source
   <div class="ui horizontal list">
     <h5>Filtrar por tipo</h5>
     <div class="item"><button class="ui label filter" data-filter="all">Todos</button></div>
-    <div class="item"><button class="ui label filter" data-filter=".color">Color</button></div>
     <div class="item"><button class="ui label filter" data-filter=".flexbox">Flexbox</button></div>
-    <div class="item"><button class="ui label filter" data-filter=".sass">Sass</button></div>
     <div class="item"><button class="ui label filter" data-filter=".jekyll">Jekyll</button></div>
-    <div class="item"><button class="ui label filter" data-filter=".tools">Tools</button></div>
-    <div class="item"><button class="ui label filter" data-filter=".tutorial">Tutorials</button></div>
-    <div class="item"><button class="ui label filter" data-filter=".framework">Frameworks</button></div>
-    <div class="item"><button class="ui label filter" data-filter=".ux">UX</button></div>
+    <div class="item"><button class="ui label filter" data-filter=".css">CSS</button></div>
+    <div class="item"><button class="ui label filter" data-filter=".js">JS</button></div>
     <h5>Ordenar</h5>
     <div class="item"><button class="ui label sort" data-sort="myorder:asc">Nuevos</button></div>
     <div class="item"><button class="ui label sort" data-sort="myorder:desc">Viejos</button></div>
@@ -24,9 +20,9 @@ layout: open-source
 
 <div id="Container" class="mxt-container">
   <h1 class="ui dividing header -flex">
-    Software Libre
+    Tutoriales
   </h1>
-  {% for post in site.data.open-source %}
+  {% for post in site.data.tutorials %}
   <div class="mix default {{post.category}}" data-myorder="{{post.order}}">
     <h3 class="title">
       <a href="{{post.link}}" target="_blank">
@@ -46,3 +42,6 @@ layout: open-source
   {% endfor %}
   <div class="gap"></div>
 </div>
+
+
+

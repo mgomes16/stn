@@ -1,0 +1,41 @@
+- title: Atomic Design
+  category: css design
+  link: 'http://atomicdesign.bradfrost.com/table-of-contents/r'
+  excerpt: "Atomic design is a methodology for crafting effective design systems"
+  favicon: "http://66.media.tumblr.com/avatar_864c49f49415_64.png"
+  short-url: "atomicdesign.bradfrost.com/"
+  order: 200
+
+- title: HTML Color Codes
+  category: color tools
+  link: 'http://htmlcolorcodes.com/'
+  excerpt: "Easily find HTML color codes for your website using our color picker, color chart and HTML color names with Hex color codes, RGB and HSL values."
+  favicon: "http://htmlcolorcodes.com/assets/images/icons/touch-icon-192x192.png"
+  short-url: "htmlcolorcodes.com"
+  order: 201
+
+- title: Medium
+  category: tools
+  link: 'https://medium.com/'
+  favicon: "https://cdn-static-1.medium.com/_/fp/icons/favicon-medium.TAS6uQ-Y7kcKgi0xjcYHXw.ico"
+  excerpt: "The best of what’s happening on Medium in other languages, around the world"
+  short-url: "medium.com"
+  order: 202
+
+- title: Semantic UI
+  category: framework ux
+  link: 'http://semantic-ui.com'
+  excerpt: "Semantic empowers designers and developers by creating a shared vocabulary for UI."
+  favicon: "http://semantic-ui.com/images/logo.png"
+  short-url: "semantic-ui.com"
+  order: 203
+
+- title: navnav
+  category: jquery css javascript
+  link: 'http://navnav.co/'
+  excerpt: "A ton of CSS, jQuery, and JavaScript responsive navigation examples, demos, and tutorials from all over the web."
+  favicon: "http://66.media.tumblr.com/avatar_864c49f49415_64.png"
+  short-url: "navnav.co/"
+  order: 204
+
+

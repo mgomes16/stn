@@ -8,7 +8,7 @@
 		background: #e2eff1;
 		width: 100%;
 		margin: 0 auto;
-		min-height: 80vh;
+		min-height: 91vh;
 		padding: 0;
 		display: flex;
 		flex-direction: row;
@@ -35,7 +35,19 @@
 	.header.-flex {
 		display: flex;
 		justify-content: space-between;
+		width: 100%;
 	}
+
+	@media all and (max-width: 900px){
+		  .mxt-container {
+		  	flex-direction: column;
+
+		  	.mix {
+		  		flex: 1;
+		  		width: 100%;
+		  	}
+		  }
+	  }
 
 	@media all and (max-width: 768px){
 	  .main-content {
@@ -50,9 +62,8 @@
 	  	}
 	  }
 
-	  .mxt-container {
-
-	  }
+	  
+	  
 	}
 }
 

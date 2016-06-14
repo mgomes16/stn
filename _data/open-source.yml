@@ -1,44 +1,39 @@
-- title: Color Hunt
-  category: color
-  link: 'http://www.colorhunt.co/popular'
-  order: 1
-
-- title: Color Codes
-  category: color
-  link: 'http://htmlcolorcodes.com/'
-  order: 2
-
-- title: What the flexbox
-  category: flexbox
-  link: 'http://flexbox.io/'
-  order: 3
-
-- title: Jekyll on Github
-  category: jekyll
-  link: 'https://www.youtube.com/watch?v=qoQzIjGbfTg&index=3&list=PLWjCJDeWfDdfVEcLGAfdJn_HXyM4Y7_k-'
-  order: 4
-
 - title: Medium
   category: tools
   link: 'https://medium.com/'
+  favicon: "https://cdn-static-1.medium.com/_/fp/icons/favicon-medium.TAS6uQ-Y7kcKgi0xjcYHXw.ico"
+  excerpt: "The best of what’s happening on Medium in other languages, around the world"
+  short-url: "medium.com"
   order: 5
 
 - title: Cody House
   category: tutorial
   link: 'https://codyhouse.co/'
+  favicon: "https://0bf196087c14ed19d1f11cf1-ambercreativelab.netdna-ssl.com/wp-content/themes/wp-cody-05/img/favicon.ico"
+  excerpt: "A free library of HTML/CSS/Javascript resources to boost your web projects and learn new tricks."
+  short-url: "codyhouse.co"
   order: 6
 
 - title: Codrops
   category: tutorial
   link: 'http://tympanus.net/codrops/'
+  excerpt: "Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities."
+  favicon: "http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/themes/codropstheme03/favicons/favicon-32x32.png"
+  short-url: "tympanus.net/codrops"
   order: 7
 
 - title: Atomic Design
-  category: tutorial
+  category: tutorial sass
   link: 'http://atomicdesign.bradfrost.com/table-of-contents/'
+  excerpt: "Atomic design is a methodology for crafting effective design systems"
+  favicon: "http://bradfrost.com/favicon.ico"
+  short-url: "http://atomicdesign.bradfrost.com/"
   order: 8
 
 - title: Semantic UI
-  category: framework
+  category: framework ux
   link: 'http://semantic-ui.com'
+  excerpt: "Semantic empowers designers and developers by creating a shared vocabulary for UI."
+  favicon: "http://semantic-ui.com/images/logo.png"
+  short-url: "semantic-ui.com"
   order: 9

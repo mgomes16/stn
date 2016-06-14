@@ -11,3 +11,67 @@
 		font-size: 12px;	
 	}
 }
+
+ 
+button:focus{
+  outline: 0 none;
+}
+
+/**
+ * Container/Target Styles
+ */
+
+fieldset {
+    border: 0 !important;
+    padding: 10px !important;
+
+    .field {
+        margin-bottom: 5px;
+    }
+}
+
+.mxt-container .mix.green{
+  background: #a6e6a7;
+}
+
+.mxt-container .mix.blue{
+  background: #6bd2e8;
+}
+
+/**
+ * Fail message styles
+ */
+
+.mxt-container .fail-message{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  
+  -webkit-transition: 150ms;
+  -moz-transition: 150ms;
+  transition: 150ms;
+}
+
+.mxt-container .fail-message:before{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.mxt-container .fail-message span{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.mxt-container.fail .fail-message{
+  opacity: 1;
+  pointer-events: auto;
+}
