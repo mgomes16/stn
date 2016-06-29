@@ -1,0 +1,63 @@
+- title: Oblat
+  category: work lrg ember sass
+  tags: 'webapp / ember / sass'
+  content: 'Observatorio electoral para los paises de latinoamerica'
+  link: 'http://oblat.am/#/'
+  image: 'oblat.png'
+
+- title: Somosfuturo
+  category: work lrg ember sass
+  tags: 'e-book / ember / wordpress / sass'
+  content: 'Version digital del libro impreso Somos Futuro'
+  link: 'http://somosfuturo.com.ar/#/sub-term/153'
+  image: 'somosfuturo.png'
+
+- title: Ember-Kt-editor
+  category: work lrg
+  tags: 'app / ux / ember / sass'
+  content: 'App para crear los informes de Oblat'
+  link: '/works/2016/05/04/welcome/'
+  image: 'oblat.png'
+
+- title: DG.Fadu.uba.ar
+  category: work sm wordpress css
+  tags: 'Web / wordpress'
+  content: 'Adaptacion de un wordpress para el sitio de la carrera de Diseño Grafico de la UBA'
+  link: 'http://dg.fadu.uba.ar/'
+  image: 'dgfaduuba.png'
+
+- title: De Zurda
+  category: work sm wordpress css
+  tags: 'Web / wordpress / mobile'
+  content: 'Adaptacion de un wordpress para el programa De Zurda'
+  link: 'http://dezurda.com/'
+  image: 'dezurda.png'
+
+- title: Atomic Design
+  category: resources css design sm
+  link: 'http://atomicdesign.bradfrost.com/table-of-contents/r'
+  excerpt: "Atomic design is a methodology for crafting effective design systems"
+  favicon: "http://66.media.tumblr.com/avatar_864c49f49415_64.png"
+  short-url: "atomicdesign.bradfrost.com/"
+  order: 200
+
+- title: HTML Color Codes
+  category: resources color sm
+  link: 'http://htmlcolorcodes.com/'
+  excerpt: "Easily find HTML color codes for your website using our color picker, color chart and HTML color names with Hex color codes, RGB and HSL values."
+  favicon: "http://htmlcolorcodes.com/assets/images/icons/touch-icon-192x192.png"
+  short-url: "htmlcolorcodes.com"
+  order: 201
+
+- title: Medium
+  category: tools lrg writing
+  link: 'https://medium.com/'
+  favicon: "https://cdn-static-1.medium.com/_/fp/icons/favicon-medium.TAS6uQ-Y7kcKgi0xjcYHXw.ico"
+  excerpt: "The best of what’s happening on Medium in other languages, around the world"
+  short-url: "medium.com"
+  order: 202
+
+
+
+
+

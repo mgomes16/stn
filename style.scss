@@ -10,5 +10,9 @@
 @import 'mixitup';
 @import 'works';
 @import 'footer';
-@import 'open-source';
+@import 'templates';
 @import 'semantic-ui';
+
+* {
+	outline: none;
+}

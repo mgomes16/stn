@@ -7,15 +7,17 @@
 	<link rel="stylesheet" href="{{site.baseurl}}/normalize.css">
 	<link rel="stylesheet" href="{{site.baseurl}}/style.css">
 	 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.waypoints.js"></script>
+   <script type="text/javascript" src="{{ site.baseurl }}/js/sticky.js"></script>
 	 <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.mixitup.js"></script>
 
 </head>
 
-{% include accordion.html %}
 
-<body class="op-source">
-	<header>
+<body>
+	<header id="way-header" class="way-header way-header-large">
 		{% include nav.html %}
+    
 	</header>
 
 	<div class="main-content">
@@ -23,36 +25,36 @@
 	</div>
 
 <footer class="footer" role="contentinfo">
+  <div class="way-waypoint" data-animate-down="way-header-small" data-animate-up="way-header-large"></div>
   <div class="footer-logo">
-    <img src="{{ site.baseurl }}/img/trinomia.svg" alt="Logo image">
+    <img src="{{ site.baseurl }}/img/stn-logo.png" alt="Logo image">
   </div>
   <div class="footer-links">
     <ul>
-      <li><h3>Content</h3></li>
-      <li><a href="javascript:void(0)">About</a></li>
-      <li><a href="javascript:void(0)">Contact</a></li>
-      <li><a href="javascript:void(0)">Products</a></li>
+      <li><h3>Contenido</h3></li>
+      <li><a href="{{site.baseurl}}/open-source">Open source</a></li>
+      <li><a href="https://github.com/santuan/" target="_blank">Github</a></li>
     </ul>
     <ul>
-      <li><h3>Follow Us</h3></li>
-      <li><a href="javascript:void(0)">Facebook</a></li>
-      <li><a href="javascript:void(0)">Twitter</a></li>
-      <li><a href="javascript:void(0)">YouTube</a></li>
+      <li><h3>Colecciones</h3></li>
+      <li><a href="https://github.com/santuan/stn/blob/gh-pages/_data/open-source.yml">Sugerir colección</a></li>
+      <li><a href="https://github.com/santuan/stn">Alojado en Github</a></li>
     </ul>
-    <ul>
-      <li><h3>Legal</h3></li>
-      <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-      <li><a href="javascript:void(0)">Privacy Policy</a></li>
-    </ul>
+    
   </div>
 
   <hr>
 
-  <p>Disclaimer area lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nostrum repudiandae saepe.</p>
+  <p>Este sitio fue creado utilizando tecnologias gratuitas como Jekyll y Github. <br>
+      Su intención es la recopilar todas las herramientas libres que andan circulando por todo internet. </p>
 </footer>
+
+{% include mixitup.html %}
 
 <script type="text/javascript" src="{{ site.baseurl }}/js/rAF.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/animation-background.js"></script>
+
+
 
 <script>
   $('.message .close')
@@ -64,6 +66,26 @@
   })
 ;
 </script>
+
+<script>
+var $head = $( '#way-header' );
+$( '.way-waypoint' ).each( function(i) {
+  var $el = $( this ),
+    animClassDown = $el.data( 'animateDown' ),
+    animClassUp = $el.data( 'animateUp' );
+
+  $el.waypoint( function( direction ) {
+    if( direction === 'down' && animClassDown ) {
+      $head.attr('class', 'way-header ' + animClassDown);
+    }
+    else if( direction === 'up' && animClassUp ){
+      $head.attr('class', 'way-header ' + animClassUp);
+    }
+  }, { offset: '100%' } );
+} );
+</script>
+
+
 
 
 

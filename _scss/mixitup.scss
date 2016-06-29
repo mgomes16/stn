@@ -1,72 +1,85 @@
+
 .controls{
-  padding: 0;
-  background: #333;
-  color: #eee;
-  flex-basis: 290px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
 
-label{
-  font-weight: 300;
-  margin: 0 .4em 0 0;
 }
-
-button{
+ 
+fieldset{
   display: inline-block;
-  padding: .4em .8em;
+  vertical-align: top;
+  margin: 0 1em 0 0;
   background: #666;
-  border: 0;
-  color: #ddd;
-  font-size: 16px;
-  font-weight: 300;
-  border-radius: 4px;
+  padding: .5em;
+  border-radius: 3px;
+}
+
+.checkbox{
+  display: block;
+  position: relative;
   cursor: pointer;
+  margin-bottom: 8px;
 }
 
-button.active{
+.checkbox input[type="checkbox"]{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.checkbox label{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding-left: 1.5em;
+}
+
+.checkbox label:before,
+.checkbox label:after{
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.checkbox label:before{
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background: #ddd;
+  border-radius: 3px;
+}
+
+.checkbox label:after{
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
   background: #68b8c4;
+  opacity: 0;
+  pointer-events: none;
 }
 
-button:focus{
-  outline: 0 none;
+.checkbox input:checked ~ label:after{
+  opacity: 1;
 }
 
-button + label{
-  margin-left: 1em;
+.checkbox input:focus ~ label:before{
+  background: #eee;
 }
 
-.mxt-container {
-    padding: 2% 2% 0;
-    text-align: justify;
-    flex: 1;
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-
-    &.list {
-      flex-direction: column;
-
-      .mix {
-        flex: 1;
-        flex-firection: row;
-      }
-    }
-
-  //padding: 2% 2% 0;
-  //text-align: justify;
-  //font-size: 0.1px;
-  //flex: 1;
-  //-webkit-transform: translateZ(0);
-  //-webkit-backface-visibility: hidden;
-
-}
-
-
+/**
+ * mxt-mxt-Container/Target Styles
+ */
 
 .mxt-container:after{
   content: '';
@@ -78,43 +91,25 @@ button + label{
 .mxt-container .gap{
   display: inline-block;
   width: 49%;
-  overflow: hidden;
 }
 
 .mxt-container .mix{
   text-align: left;
-  background: #b6d5e1;
-  margin: 1%;
+  //background: #03899c;
+  margin-bottom: 2%;
   display: none;
-  position: relative;
-  color: #65799b;
-  padding: 3%;
-  flex: 0 0 30%;
-  //text-align: left;
-  //background: #b6d5e1;
-  //margin-bottom: 1%;
-  //display: none;
-  //position: relative;
-  //color: #65799b;
-  //padding: 1%;
-
-  .extra {
-    margin-top: 10px;
-
-    img {
-      width: 20px;
-      margin: 0 5px 0 0;
-    }
-  }
 }
 
-.mxt-container .mix.lrg {
+.mxt-container .mix.category-1{
   border-top: 2px solid limegreen;
-  width: 100%;
 }
 
-.mxt-container .mix.sm {
+.mxt-container .mix.category-2{
   border-top: 2px solid yellow;
+}
+
+.mxt-container .mix.category-3{
+  border-top: 2px solid white;
 }
 
 .mxt-container .mix:after{
@@ -123,19 +118,10 @@ button + label{
   font-size: 16px;
   display: inline-block;
   vertical-align: top;
-  padding: 10px 15px;
+  padding: 4% 6%;
   font-weight: 700;
-  position: absolute;
-  top: -4px;
-  right: -4px;
 }
 
-.mxt-container .mix:before{
-  //content: '';
-  //display: inline-block;
-  //padding-top: 60%;
-}
-/*
 @media all and (min-width: 420px){
   .mxt-container .mix,
   .mxt-container .gap{
@@ -146,26 +132,9 @@ button + label{
 @media all and (min-width: 640px){
   .mxt-container .mix,
   .mxt-container .gap{
-    width: 23.5%;
-  }
-}
-*/
-/**
- * List Styles
- */
-
-.mxt-container.list .mix{
-  width: 100%;
-}
-
-.mxt-container.list .mix:before{
-  //padding-top: 40px;
-}
-
-.ui.cards.grid {
-  flex-direction: column;
-
-  .mix {
-    width: 100%;
+    width: 32%;
+    margin: 0 0 2% 1%;
+    padding: 0 1%;
+    border-bottom: 1px solid #ddd;
   }
 }

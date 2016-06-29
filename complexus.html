@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="template about">
+  <h3 class="ui dividing header">A little Bit Complex</h3>
+	{% for post in site.categories.complexus %}
+    <div class="mix default {{post.category}}" data-myorder="{{post.order}}">
+      <div class="image">
+        <img src="{{ site.baseurl }}/img/{{post.image}}" width="150">
+      </div>
+      <div class="content">
+        <div class="header">{{post.title}}</div>
+        <div class="meta">
+          <div>{{post.tags}}</div>
+        </div>
+        <div class="description">
+          {{post.content}}
+        </div>
+      </div>
+      <div class="extra content">
+        <a class="ui button" href="{{post.url}}">Ver sitio</a>
+      </div>
+    </div>
+   {% endfor %}
+</div>
+

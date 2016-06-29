@@ -1,48 +1,65 @@
 ---
-layout: open-source
+layout: default
 ---
 
-<div class="controls">
-  <div class="ui horizontal list">
-    <h5>Filtrar por tipo</h5>
-    <div class="item"><button class="ui label filter" data-filter="all">Todos</button></div>
-    <div class="item"><button class="ui label filter" data-filter=".color">Color</button></div>
-    <div class="item"><button class="ui label filter" data-filter=".flexbox">Flexbox</button></div>
-    <div class="item"><button class="ui label filter" data-filter=".sass">Sass</button></div>
-    <div class="item"><button class="ui label filter" data-filter=".jekyll">Jekyll</button></div>
-    <div class="item"><button class="ui label filter" data-filter=".tools">Tools</button></div>
-    <div class="item"><button class="ui label filter" data-filter=".tutorial">Tutorials</button></div>
-    <div class="item"><button class="ui label filter" data-filter=".framework">Frameworks</button></div>
-    <div class="item"><button class="ui label filter" data-filter=".ux">UX</button></div>
-    <h5>Ordenar</h5>
-    <div class="item"><button class="ui label sort" data-sort="myorder:asc">Nuevos</button></div>
-    <div class="item"><button class="ui label sort" data-sort="myorder:desc">Viejos</button></div>
-  </div>
-</div>
+<div class="template works">
 
+<div class="hero">
+
+<form class="controls" id="Filters">
+  <!-- We can add an unlimited number of "filter groups" using the following format: -->
+  
+  <fieldset class="hero-search dropdownSort">
+    <h4>Buscar</h4>
+    <select>
+     <option value="">opciones</option>
+     <option value=".aplicaciones">aplicaciones</option>
+     <option value=".tutoriales">tutoriales</option>
+     <option value=".recursos">recursos</option>
+     <option value=".inspiracion">inspiracion</option>
+     <option value=".articulos">articulos</option>
+    </select>
+    <h4>libres</h4>
+    
+  </fieldset>
+ 
+  <button id="Reset" class="clear-filters ui button purple tiny">Limpiar filtros</button>
+</form>
+
+</div>
 
 
 <div id="Container" class="mxt-container">
-  <h1 class="ui dividing header -flex">
-    Software Libre
-  </h1>
-  {% for post in site.data.open-source %}
-  <div class="mix default {{post.category}}" data-myorder="{{post.order}}">
-    <h3 class="title">
-      <a href="{{post.link}}" target="_blank">
-      {{post.title}}
+
+  <div class="fail-message"><span>Parece que no se encontraron resultados.</span></div>
+    {% for post in site.data.open-source %}
+    <div class="mix default {{post.category}}" data-myorder="{{post.order}}">
+      <a target="_blank" href="{{post.link}}">
+      <div class="favicon">
+        <img src="{{post.image}}" width="25">
+      </div>
+      <div class="content">
+        <h3 class="header">{{post.title}}</h3>
+        <div class="meta">
+          <div>{{post.tags}}</div>
+        </div>
+        <div class="description">
+          {{post.content}}
+        </div>
+      </div>
+      <div class="extra content">
+        <div class="ui button tiny blue">Visitar</div>
+      </div>
       </a>
-    </h3>
-    <div class="description">
-      <p>{{post.excerpt}}</p>
     </div>
-    <div class="extra content">
-      <a href="{{post.link}}" target="_blank">
-         <img class="ui mini spaced image" src="{{post.favicon}}" style="width: 20px;">
-        {{post.short-url}}
-      </a>
-    </div>
-  </div>
-  {% endfor %}
-  <div class="gap"></div>
+   {% endfor %}
+   
+ 
 </div>
+
+
+
+</div>
+
+{% include mxt-filter.html %}
+

@@ -1,3 +1,57 @@
-nav {
-	color: red;
+.way-header {
+    position: fixed;
+    z-index: 100;
+    background: #fff;
+    left: 0;
+    right: 0;
+    top: 0;
+    -webkit-transition: all .88s cubic-bezier(0.7,0,.3,1);
+    -moz-transition: all .88s cubic-bezier(0.7,0,.3,1);
+    transition: all .88s cubic-bezier(0.7,0,.3,1);
+    padding-top: 20px;
+
+    .primary-menu {
+
+        min-height: 70px;
+
+        .logo {
+            -webkit-transition: all .88s cubic-bezier(0.7,0,.3,1);
+            -moz-transition: all .88s cubic-bezier(0.7,0,.3,1);
+            transition: all .88s cubic-bezier(0.7,0,.3,1);
+
+            img {
+                -webkit-transition: all .88s cubic-bezier(0.7,0,.3,1);
+                -moz-transition: all .88s cubic-bezier(0.7,0,.3,1);
+                transition: all .88s cubic-bezier(0.7,0,.3,1);
+                width: 100px !important;
+            }
+        }
+
+    }
+
+    &.way-header-large {
+    	height: 110px;
+
+    	.logo {
+		    //top: 30px;
+		}
+    }
+
+    &.way-header-small {
+		height: 60px;
+		padding-top: 0;
+
+        .logo {
+
+        img {
+            width: 80px !important;
+        }
+    }
+
+
+    }
 }
+
+
+
+
