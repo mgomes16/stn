@@ -30,10 +30,16 @@ github_username:  santuan
 t:
   es:
     open-source:
-      name: "Collecciones Open Source"
+      name: "Colecciones Open Source"
       url: "/codigo-abierto/"
+    submit:
+      name: "Sugerir"
+      url: "/sugerir/"
   en:
     open-source:
-      name: "Open Source Collecttion"
+      name: "Open Source Collection"
       url: "/open-source/"
+    submit:
+      name: "Submit"
+      url: "/submit/"
 

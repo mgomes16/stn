@@ -4,16 +4,21 @@
 			<a href="{{ site.baseurl }}/{{ site.index[page.lang] }}" class="item logo">
 				<img src="{{ site.baseurl }}/img/stn-logo.png" alt="Logo">
 			</a>
+			<div class="site-menu left menu">
 			{% for menu in site.t[page.lang] %}
 			 <a href="{{ site.baseurl }}{{ menu[1].url }}" class="item">{{ menu[1].name }}</a>
 			{% endfor %}
-			<a href="https://github.com/santuan/" class="item" target="_blank">Github</a>
+			
+			</div>
 			
 			<div class="lang-trigger right menu">
 			{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
 			{% for page in pages %}
 			    <a href="{{ site.baseurl }}{{ page.url }}" class="item {{ page.lang }}">{{ page.lang }}</a>
 			{% endfor %}
+			<a href="https://github.com/santuan/" class="item" target="_blank">
+			<img class="ui avatar right spaced image" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" style="width: 25px; height: 25px;" alt="">
+			Github</a>
 			</div>
 		</div>
 	</div>
