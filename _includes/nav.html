@@ -1,7 +1,7 @@
 <nav class="primary-menu">
 	<div class="ui container nav">
 		<div class="ui large secondary network menu">
-			<a href="{{ site.baseurl }}/{{ site.index[page.lang] }}" class="item logo">
+			<a href="{{ site.baseurl }}{{ site.index[page.lang] }}" class="item logo">
 				<img src="{{ site.baseurl }}/img/stn-logo.png" alt="Logo">
 			</a>
 			{% for menu in site.t[page.lang] %}
