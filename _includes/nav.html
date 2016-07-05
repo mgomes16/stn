@@ -1,12 +1,20 @@
 <nav class="primary-menu">
 	<div class="ui container nav">
 		<div class="ui large secondary network menu">
-			<a href="{{site.baseurl}}/" class="item logo">
+			<a href="{{ site.baseurl }}/{{ site.index[page.lang] }}" class="item logo">
 				<img src="{{ site.baseurl }}/img/stn-logo.png" alt="Logo">
 			</a>
-			<a href="{{site.baseurl}}/open-source" class="item {% if page.url == '/open-source.html' %}active{% endif %}">Colecciones Open Source</a>
-			
+			{% for menu in site.t[page.lang] %}
+			 <a href="{{ menu[1].url }}" class="item">{{ menu[1].name }}</a>
+			{% endfor %}
 			<a href="https://github.com/santuan/" class="item" target="_blank">Github</a>
+			
+			<div class="lang-trigger right menu">
+			{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+			{% for page in pages %}
+			    <a href="{{ page.url }}" class="item {{ page.lang }}">{{ page.lang }}</a>
+			{% endfor %}
+			</div>
 		</div>
 	</div>
 </nav>

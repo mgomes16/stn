@@ -105,6 +105,7 @@ fieldset {
   -webkit-transition: 150ms;
   -moz-transition: 150ms;
   transition: 150ms;
+  display: none;
 }
 
 .mxt-container .fail-message:before{

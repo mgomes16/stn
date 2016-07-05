@@ -1,47 +1,55 @@
 - title: Canva
-  category: aplicaciones es 
-  content: 'Crea diseños digitales o para imprimir: gráficos para blogs, presentaciones, portadas para Facebook, volantes, pósteres, invitaciones y mucho más.'
+  category: aplicaciones es
+  contenido: 'Crea diseños digitales o para imprimir: gráficos para blogs, presentaciones, portadas para Facebook, volantes, pósteres, invitaciones y mucho más.'
+  content: 'Canva makes design simple for everyone. Create designs for Web or print: blog graphics, presentations, Facebook covers, flyers, posters, invitations and so much more.'
   link: 'https://www.canva.com/'
   image: 'https://static.canva.com/static/images/apple-touch-icon-76x76.png'
 
 - title: Medium
   category: aplicaciones es en
+  contenido: 'Bienvenidos a Medium, un espacio para leer, escribir e interactuar con las historias que te interesan'
   content: 'Welcome to Medium, a place to read, write, and interact with the stories that matter most to you. '
   link: 'https://medium.com'
   image: 'https://cdn-static-1.medium.com/_/fp/icons/favicon-medium.TAS6uQ-Y7kcKgi0xjcYHXw.ico'
 
 - title: Color Hunt
   category: aplicaciones recursos  en
+  contenido: 'Coleccion de hermosos colores actualizados diariamente'
   content: 'Curated collection of beautiful colors, updated daily.'
   link: 'http://www.colorhunt.co/popular'
   image: 'http://colorhunt.co/img/favicon.gif'
 
 - title: Flexbox defence
   category: tutoriales diseñar desarrollar flexbox en
+  contenido: 'Un juego para aprender Flexbox'
   content: 'A game for learning Flexbox'
   link: 'http://www.flexboxdefense.com/'
   image: 'http://www.flexboxdefense.com/images/favicon.ico'
 
 - title: Flexbox Course
   category: tutoriales diseñar desarrollar flexbox en
+  contenido: '20 simples video tutoriales para volverse un maestro de Flexbox'
   content: 'A simple 20 video course that will help you master CSS Flexbox.'
   link: 'http://flexbox.io/view/CFgeJq4l1YM'
   image: 'http://flexbox.io/images/apple-touch-icon-72x72.png'
 
 - title: Setting up Jekyll on github
   category: tutoriales
+  contenido: 'Como comenzar a armar un sitio con Jekyll y Github'
   content: 'How to set up a Jekyll website on GitHub using GitHub Pages.'
   link: 'https://www.youtube.com/watch?v=qoQzIjGbfTg&list=PLWjCJDeWfDdfVEcLGAfdJn_HXyM4Y7_k-&index=3'
   image: 'http://jekyllrb.com/favicon.ico'
 
 - title: SASS guidelines
   category: articulos
+  contenido: 'Una opcion para escribir una hoja de estilos sana, mantenible y escalable con SASS'
   content: 'An opinionated styleguide for writing sane, maintainable and scalable Sass.'
   link: 'https://sass-guidelin.es/#components'
   image: 'https://sass-guidelin.es/assets/images/favicon.ico'
 
 - title: NavNav
   category: recursos
+  contenido: 'Compendio de recursos, ejemplos, tutoriales para CSS, jQuery y Javascript '
   content: 'A ton of CSS, jQuery, and JavaScript responsive navigation examples, demos, and tutorials from all over the web.'
   link: 'http://navnav.co'
   image: 'http://66.media.tumblr.com/avatar_864c49f49415_128.png'
@@ -49,63 +57,75 @@
 
 - title: Atomic design
   category: articulos
+  contenido: 'El diseño atomico es una metodologia para diseñar sistemas visuales '
   content: 'Atomic design is a methodology for crafting effective design systems.'
   link: 'http://atomicdesign.bradfrost.com/table-of-contents/'
   image: 'http://bradfrost.com/favicon.ico'
 
 - title: A List Apart
   category: articulos inspiracion
+  contenido: 'Explore artículos sobre diseño, desarrollo y el sentido del contenido web, con enfasis en las buenas practicas y los estandares'
   content: 'A List Apart explores the design, development, and meaning of web content, with a special focus on web standards and best practices.'
   link: 'http://atomicdesign.bradfrost.com/table-of-contents/'
   image: 'http://alistapart.com/components/assets/img/favicons/apple-touch-icon-72x72.png'
 
 - title: Lomograpy css
   category: articulos inspiracion tutoriales
+  contenido: 'Ideas sobre front-end y diseño. (y probablemente otras cosas)'
   content: 'Thoughts about front-end development and design. And probably other ramblings by Una Kravets.'
   link: 'https://una.im/lomo/'
   image: 'data:image/png;base64,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'
 
 - title: Atomic OOBEMITSCSS
   category: articulos diseñar desarrollar css en
+  contenido: 'Una comparte diversas metodologias CSS a la hora de crear su Atomic OOBEMITSCSS.'
   content: 'Una shares with us various CSS methodologies in creating Atomic OOBEMITSCSS.'
   link: 'https://www.sitepoint.com/atomic-oobemitscss/'
   image: 'https://www.sitepoint.com/favicon.ico'
 
 - title: semantic-ui
   category: recursos
+  contenido: 'Framework que empondera la relacion entre el diseñador y el desarrollador manejando un vocabulario UI similar'
   content: 'Semantic empowers designers and developers by creating a shared vocabulary for UI.'
   link: 'http://semantic-ui.com/'
   image: 'http://semantic-ui.com/images/logo.png'
 
 - title: Canva Design Blog
   category: inspiracion en
-  content: 'Canvas Design School has everything you need to learn design. Check out our daily design articles, interactive tutorials and awesome tips.'
+  contenido: 'Una pequeña escuela de diseño online para aprender un poco mas sobre diseño.'
+  content: 'Canvas Design School has everything you need to learn design.'
   link: 'https://designschool.canva.com/'
   image: 'https://static.canva.com/static/images/apple-touch-icon-76x76.png'
 
 - title: UnHeap
   category: recursos js inspiracion css
+  contenido: 'UnHeap es un repositorio para navegar &amp; estar a tope con lo ultimo en plugins jquery y javascript'
   content: 'Unheap is a repository for browsing &amp; staying on top of the latest jQuery plugins and JavaScript scripts.'
   link: 'http://www.unheap.com/'
   image: 'http://www.unheap.com/wp-content/themes/unheapv2/assets/images/favicon.png'
 
 - title: Obsertavorio Electoral
   category: aplicaciones 
-  content: 'Recopilación y divulgación de los procesos electorales desde 1998 para contribuir con los debates sobre los procesos democráticos de América Latina.'
+  contenido: 'Recopilación y divulgación de los procesos electorales desde 1998 para contribuir con los debates sobre los procesos democráticos de América Latina.'
+  content: 'This site gathers together and disclose the electoral processes since 1998 to contribute to the discussions on democratic processes in Latin America.'
   link: 'http://oblat.am/'
   image: 'http://oblat.am/assets/images/anim-oblat.svg'
 
 - title: Tesoro Lexicográfico
   category: aplicaciones
-  content: 'Tesoro lexicográfico del español de Puerto Rico'
+  contenido: 'Tesoro lexicográfico del español de Puerto Rico'
+  content: 'Lexicographical Spanish Treasury of Puerto Rico'
   link: 'https://tesoro.pr/'
   image: 'https://assets.tesoro.pr/images/favicon-6cd61bbffcc1bda692f7cbeaad876c12.png'
 
 - title: Qroom
   category: aplicaciones
+  contenido: 'Qroom es una plataforma para escuchar música fácil y aleatorioriamente. Escribe y disfruta de la música.'
   content: 'Qroom is the platform for listening easy and random music. Type and enjoy music.'
   link: 'http://qroom.co/'
   image: 'http://qroom.co/favicon.png'
+
+
 
 
 
