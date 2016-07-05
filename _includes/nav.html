@@ -5,14 +5,14 @@
 				<img src="{{ site.baseurl }}/img/stn-logo.png" alt="Logo">
 			</a>
 			{% for menu in site.t[page.lang] %}
-			 <a href="{{ menu[1].url }}" class="item">{{ menu[1].name }}</a>
+			 <a href="{{ site.baseurl }}/{{ menu[1].url }}" class="item">{{ menu[1].name }}</a>
 			{% endfor %}
 			<a href="https://github.com/santuan/" class="item" target="_blank">Github</a>
 			
 			<div class="lang-trigger right menu">
 			{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
 			{% for page in pages %}
-			    <a href="{{ page.url }}" class="item {{ page.lang }}">{{ page.lang }}</a>
+			    <a href="{{ site.baseurl }}/{{ page.url }}" class="item {{ page.lang }}">{{ page.lang }}</a>
 			{% endfor %}
 			</div>
 		</div>

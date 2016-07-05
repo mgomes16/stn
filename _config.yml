@@ -23,7 +23,7 @@ description:
   es: Una descripcion en español
   en: Some description in english
 index:
-  es: 
+  es: /
   en: welcome
 github_username:  santuan
 
