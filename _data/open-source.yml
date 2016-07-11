@@ -126,6 +126,26 @@
   link: 'http://qroom.co/'
   image: 'http://qroom.co/favicon.png'
 
+- title: Pixel Buddha
+  category: recursos
+  contenido: 'PixelBuddha está feliz de ofrecer recursos gratuitos y premiums para desarrolladores y diseñadores web'
+  content: 'PixelBuddha is happy to offer exclusive Free and Premium high quality resources for web designers and developers.'
+  link: 'https://pixelbuddha.net/'
+  image: 'https://pixelbuddha.net/sites/all/themes/gimpo/apple-touch-icon.png'
+  
+- title: Typography for User Interfaces
+  category: articulos
+  contenido: 'Analisis de la evolucion de la Tipografia para las interfaces de usuarios'
+  content: 'An article about the evolution of typography for user interfaces'
+  link: 'https://viljamis.com/2016/typography-for-user-interfaces/'
+  image: 'https://viljamis.com/img/pinned.svg'
+  
+- title: Formspree
+  category: recursos aplicacion
+  contenido: 'Formulario HTML funcional. Solamente pega tu mail en el formulario y listo. Sin cuenta, PHP, Javascript'
+  content: 'Functional HTML forms. Just send your form to our URL and we send it to your email. No PHP, Javascript or sign up required'
+  link: 'https://formspree.io/'
+  image: 'https://formspree.io/static/img/favicon.ico'
 
 
 
