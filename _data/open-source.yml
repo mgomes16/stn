@@ -147,6 +147,13 @@
   link: 'https://formspree.io/'
   image: 'https://formspree.io/static/img/favicon.ico'
 
+- title: Built with Ember
+  category: recursos inspiracion
+  contenido: 'Colecciones de ambisiosas aplicaciones web hechas con ember.js'
+  content: 'Collections of ambitious web applications built using Ember.js.'
+  link: 'http://builtwithember.io/'
+  image: 'http://builtwithember.io/img/favicon.png'
+
 
 
 
