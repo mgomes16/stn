@@ -161,6 +161,22 @@
   link: 'http://refills.bourbon.io/'
   image: 'http://bourbon.io/images/bourbon-nav/refills.png'
 
+- title: Pixel Map
+  category: recursos aplicaciones 
+  contenido: 'Crea mapas interactivos con una interfaz simple. Guardalos como imagen o en codigo JavaScript para publicarlo facilmente.'
+  content: 'Create a stunning interactive maps with simple-to-use user interface. Save it as image or JavaScript code for easy publishing.'
+  link: 'https://pixelmap.amcharts.com/'
+  image: 'https://pixelmap.amcharts.com/static/img/icons/icon76x76.png'
+  
+- title: Trianglify Generator
+  category: recursos aplicaciones 
+  contenido: 'Esto es solamente un pequeño demo. Usa la libreria de Trianglify para generar tramas coloridas'
+  content: 'This is just a little demo. It uses my Trianglify library to generate colorful patterns.'
+  link: 'https://qrohlf.com/trianglify-generator/'
+  image: 'https://qrohlf.com/trianglify-generator/images/header.png'
+  
+
+
 
 
 
